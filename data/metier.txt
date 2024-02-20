@@ -1,0 +1,8 @@
+Forgeron
+Tanneur
+Menuisier
+Médecin
+Aubergiste
+Maçon
+Religieux
+Explorateur
