@@ -6,44 +6,55 @@
     <title>Générateur de personnage</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <div class="container">
         <h1>Générateur de personnage</h1>
-        <form id="characterForm">
-            <div class="form-group">
-                <label for="name">Prénom</label>
-                <input type="text" id="name" name="name" placeholder="Prénom du personnage">
+        <div class="columns">
+            <div class="left-column">
+                <div class="info-box">
+                    <h2>Informations Personnelles</h2>
+                    <div class="form-group">
+                        <label for="name">Prénom</label>
+                        <input type="text" id="name" name="name" placeholder="Prénom du personnage" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="familyName">Nom de famille</label>
+                        <input type="text" id="familyName" name="familyName" placeholder="Nom de famille" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="race">Race</label>
+                        <input type="text" id="race" name="race" placeholder="Race du personnage" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="job">Métier</label>
+                        <input type="text" id="job" name="job" placeholder="Métier du personnage" readonly>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="familyName">Nom de famille</label>
-                <input type="text" id="familyName" name="familyName" placeholder="Nom de famille">
+            <div class="right-column">
+                <div class="info-box">
+                    <h2>Stats</h2>
+                    <div class="form-group">
+                        <label for="strength">Force</label>
+                        <input type="number" id="strength" name="strength" placeholder="1-6" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="agility">Agilité</label>
+                        <input type="number" id="agility" name="agility" placeholder="1-6" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="constitution">Constitution</label>
+                        <input type="number" id="constitution" name="constitution" placeholder="1-6" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="intelligence">Intelligence</label>
+                        <input type="number" id="intelligence" name="intelligence" placeholder="1-6" readonly>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="race">Race</label>
-                <input type="text" id="race" name="race" placeholder="Race du personnage">
-            </div>
-            <div class="form-group">
-                <label for="job">Métier</label>
-                <input type="text" id="job" name="job" placeholder="Métier du personnage">
-            </div>
-            <div class="form-group">
-                <label for="strength">Force</label>
-                <input type="number" id="strength" name="strength" placeholder="1-6">
-            </div>
-            <div class="form-group">
-                <label for="agility">Agilité</label>
-                <input type="number" id="agility" name="agility" placeholder="1-6">
-            </div>
-            <div>
-                <form-group">
-                <label for="constitution">Constitution</label>
-                <input type="number" id="constitution" name="constitution" placeholder="1-6">
-            </div>
-            <div class="form-group">
-                <label for="intelligence">Intelligence</label>
-                <input type="number" id="intelligence" name="intelligence" placeholder="1-6">
-            </div>
+        </div>
             <button type="button" id="generate">Générer</button>
         </form>
     </div>
